@@ -1,7 +1,7 @@
-from chia.types.blockchain_format.coin import Coin
-from chia.types.blockchain_format.sized_bytes import bytes32
-from chia.util.ints import uint64
-from chia.util.hash import std_hash
+from equality.types.blockchain_format.coin import Coin
+from equality.types.blockchain_format.sized_bytes import bytes32
+from equality.util.ints import uint64
+from equality.util.hash import std_hash
 import io
 
 

@@ -6,10 +6,10 @@ from pathlib import Path
 import aiosqlite
 import pytest
 
-from chia.consensus.blockchain import Blockchain
-from chia.full_node.block_store import BlockStore
-from chia.full_node.coin_store import CoinStore
-from chia.util.db_wrapper import DBWrapper
+from equality.consensus.blockchain import Blockchain
+from equality.full_node.block_store import BlockStore
+from equality.full_node.coin_store import CoinStore
+from equality.util.db_wrapper import DBWrapper
 from tests.setup_nodes import bt, test_constants
 
 
