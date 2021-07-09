@@ -3,7 +3,7 @@ min_mainnet_k_size: 32
 # Send a ping to all peers after ping_interval seconds
 ping_interval: 120
 self_hostname: &self_hostname "localhost"
-daemon_port: 59600
+daemon_port: 55421
 inbound_rate_limit_percent: 100
 outbound_rate_limit_percent: 30
 
@@ -192,7 +192,7 @@ full_node:
 
   # If True, starts an RPC server at the following port
   start_rpc_server: True
-  rpc_port: 9755
+  rpc_port: 9547
 
   # Use UPnP to attempt to allow other full nodes to reach your node behind a gateway
   enable_upnp: True
@@ -265,7 +265,7 @@ ui:
   port: 9222
 
   # Which port to use to communicate with the full node
-  rpc_port: 9755
+  rpc_port: 9547
 
   # This SSH key is for the ui SSH server
   ssh_filename: config/ssh_host_key
@@ -276,7 +276,7 @@ ui:
   # this is where the electron UI will find its daemon
   # defaults to the one running locally with its private keys
   daemon_host: *self_hostname
-  daemon_port: 59600
+  daemon_port: 55421
   daemon_ssl:
     private_crt: config/ssl/daemon/private_daemon.crt
     private_key: config/ssl/daemon/private_daemon.key
